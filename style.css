@@ -1,3 +1,4 @@
+/* parent element style */
 main {
   margin-top: 60px;
 }
@@ -26,4 +27,43 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+.color-banner {
+  background-color: #775f47;
+  margin: auto;
+}
+
+.group img {
+  width: 100%;
+}
+
+/* child element styles */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.item {
+  flex: 1;
+  margin: .25em;
+}
+
+.item-double {
+  flex: 2;
+  margin: .25em;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
